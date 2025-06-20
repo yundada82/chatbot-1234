@@ -2,10 +2,12 @@ import streamlit as st
 from openai import OpenAI
 
 # Show title and description.
-st.title("너를 위한 마음의 소리 Chatbot")
-st.write("마음을 털어놓고 싶은 날, 위로와 응원이 필요한 순간, 당신을 위한 내가 여기 있습니다.\n\n"
-         "처음 이용하시려면, 잠깐만 OpenAI API 키를 입력해 주세요. 🔑\n"
-    "당신만의 대화를 만들기 위한 작은 열쇠예요. [API 키 받기](https://platform.openai.com/account/api-keys)"
+st.title("너를 위한 '마음의 소리' Chatbot")
+st.write(
+    "마음을 털어놓고 싶은 날, 위로와 응원이 필요한 순간,\n"
+    "무료하고 심심한 당신을 위한 내가 여기 있습니다.\n\n"
+    "당신만의 대화를 위한 OpenAI API 키를 입력해 주세요. 🔑\n"
+    "[API 키 받기](https://platform.openai.com/account/api-keys)"
 )
 
 # Ask user for their OpenAI API key via `st.text_input`.
